@@ -5,11 +5,14 @@ import { ProjectsPage } from './pages/ProjectsPage'
 import { GalleryPage } from './pages/GalleryPage'
 import { LoginPage } from './pages/LoginPage'
 import { AdminPage } from './pages/AdminPage'
+import { Header } from './components/header/Header'
+import { Footer } from './components/footer/Footer'
 
 function App() {
 
   return (
     <>
+      <Header/>
       <Routes>
          <Route path='/' element={<LandingPage/>} />
          <Route path='/projects' element={<ProjectsPage/>} />
@@ -17,6 +20,7 @@ function App() {
          <Route path='/login' element={<LoginPage/>} />
          <Route path='/admin' element={<AdminPage/>} />
       </Routes>
+      <Footer/>
     </>
   )
 }
