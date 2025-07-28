@@ -5,4 +5,4 @@ export const navLinks = [
     {path: '/login', label: 'LogIn'},
     {path: '/admin', label: 'Admin'}
     
-]
+];

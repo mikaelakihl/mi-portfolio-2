@@ -7,6 +7,7 @@ import { LoginPage } from './pages/LoginPage'
 import { AdminPage } from './pages/AdminPage'
 import { Header } from './components/header/Header'
 import { Footer } from './components/footer/Footer'
+import { Navigation } from './components/header/navigation/Navigation/Navigation'
 
 function App() {
 
