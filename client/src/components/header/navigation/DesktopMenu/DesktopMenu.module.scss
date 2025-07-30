@@ -1,0 +1,15 @@
+.desktop_menu_ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    gap: 1rem;
+    height: 100%;
+    background-color: transparent;
+  
+      li {
+        list-style: none;
+      }
+  
+  }

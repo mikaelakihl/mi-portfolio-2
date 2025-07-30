@@ -5,7 +5,7 @@ import { ProjectsPage } from './pages/ProjectsPage'
 import { GalleryPage } from './pages/GalleryPage'
 import { LoginPage } from './pages/LoginPage'
 import { AdminPage } from './pages/AdminPage'
-import { Header } from './components/header/Header'
+import { Header } from './components/header/header/Header'
 import { Footer } from './components/footer/Footer'
 import { Navigation } from './components/header/navigation/Navigation/Navigation'
 
@@ -14,13 +14,15 @@ function App() {
   return (
     <>
       <Header/>
-      <Routes>
-         <Route path='/' element={<LandingPage/>} />
-         <Route path='/projects' element={<ProjectsPage/>} />
-         <Route path='/gallery' element={<GalleryPage/>} />
-         <Route path='/login' element={<LoginPage/>} />
-         <Route path='/admin' element={<AdminPage/>} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path='/' element={<LandingPage/>} />
+          <Route path='/projects' element={<ProjectsPage/>} />
+          <Route path='/gallery' element={<GalleryPage/>} />
+          <Route path='/login' element={<LoginPage/>} />
+          <Route path='/admin' element={<AdminPage/>} />
+        </Routes>
+      </main>
       <Footer/>
     </>
   )
