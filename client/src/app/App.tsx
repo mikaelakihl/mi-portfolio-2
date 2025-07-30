@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import { LandingPage } from './pages/LandingPage'
-import { ProjectsPage } from './pages/ProjectsPage'
-import { GalleryPage } from './pages/GalleryPage'
-import { LoginPage } from './pages/LoginPage'
-import { AdminPage } from './pages/AdminPage'
-import { Header } from './components/header/header/Header'
-import { Footer } from './components/footer/Footer'
-import { Navigation } from './components/header/navigation/Navigation/Navigation'
+import { LandingPage } from '../pages/LandingPage'
+import { ProjectsPage } from '../pages/ProjectsPage'
+import { GalleryPage } from '../pages/GalleryPage'
+import { LoginPage } from '../pages/LoginPage'
+import { AdminPage } from '../pages/AdminPage'
+import { Header } from '../components/header/header/Header'
+import { Footer } from '../components/footer/Footer'
+import { Navigation } from '../components/header/navigation/Navigation/Navigation'
 
 function App() {
 
