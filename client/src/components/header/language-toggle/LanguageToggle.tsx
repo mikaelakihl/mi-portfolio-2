@@ -17,7 +17,7 @@ export const LanguageToggle = () => {
     return (
         <>
         <button className={styles.language_toggle_button} onClick={toggleLanguage}>
-            SV/EN
+            {language === 'sv' ? 'en' : 'sv'}
         </button>
         </>
     )

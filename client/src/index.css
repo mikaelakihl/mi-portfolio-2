@@ -32,6 +32,7 @@ body {
 main{
   background-color: rgb(133, 115, 90);
   flex: 1;
+  padding-top: 1rem;
 }
 
 h1 {
@@ -49,6 +50,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  text-align: center;
 }
 button:hover {
   border-color: #646cff;

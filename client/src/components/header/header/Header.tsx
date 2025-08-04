@@ -6,6 +6,7 @@ export const Header = () => {
 
     return (
             <header className={styles.header}>
+                
                 <LanguageToggle/>
                 <div className="nav_bar"><Navigation/></div>
                 

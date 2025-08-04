@@ -8,6 +8,7 @@ import { AdminPage } from '../pages/AdminPage'
 import { Header } from '../components/header/header/Header'
 import { Footer } from '../components/footer/Footer'
 import { LanguageProvider } from '../context/LanguageProvider'
+import { HeroSection } from '../components/hero/HeroSection'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <>
     <LanguageProvider>
       <Header/>
+      <HeroSection/>
       <main>
         <Routes>
           <Route path='/' element={<LandingPage/>} />
