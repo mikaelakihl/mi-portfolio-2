@@ -3,6 +3,7 @@ import { getNavLinks } from "../../../../data/navLinks"
 import styles from './DesktopMenu.module.scss';
 import { useContext } from "react";
 import { LanguageContext } from "../../../../context/LanguageContext";
+import { LanguageToggle } from "../../language-toggle/LanguageToggle";
 
 export const DesktopMenu = () => {
 

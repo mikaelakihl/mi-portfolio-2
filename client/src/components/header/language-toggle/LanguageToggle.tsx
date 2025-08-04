@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { LanguageContext } from "../../../context/LanguageContext";
 import en from "../../../languages/en";
+import styles from './LanguageToggle.module.scss';
 
 export const LanguageToggle = () => {
 
@@ -15,7 +16,7 @@ export const LanguageToggle = () => {
     
     return (
         <>
-        <button onClick={toggleLanguage}>
+        <button className={styles.language_toggle_button} onClick={toggleLanguage}>
             SV/EN
         </button>
         </>
