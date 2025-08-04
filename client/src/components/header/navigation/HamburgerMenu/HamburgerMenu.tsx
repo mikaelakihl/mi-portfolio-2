@@ -1,11 +1,18 @@
 import { NavLink } from "react-router-dom"
-import { navLinks } from "../../../../data/navLinks"
+import { getNavLinks } from "../../../../data/navLinks"
 import styles from './HamburgerMenu.module.scss';
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LanguageContext } from "../../../../context/LanguageContext";
 
 export const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(prev => !prev)
+
+    const context = useContext(LanguageContext);
+    if (!context) return null;
+
+    const {texts} = context;
+    const navLinks = getNavLinks(texts);
 
     return (
         <nav className={styles.hamburger_menu_wrapper}>

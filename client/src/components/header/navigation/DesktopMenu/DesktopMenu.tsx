@@ -1,8 +1,16 @@
 import { NavLink } from "react-router-dom"
-import { navLinks } from "../../../../data/navLinks"
+import { getNavLinks } from "../../../../data/navLinks"
 import styles from './DesktopMenu.module.scss';
+import { useContext } from "react";
+import { LanguageContext } from "../../../../context/LanguageContext";
 
 export const DesktopMenu = () => {
+
+    const context = useContext(LanguageContext);
+    if (!context) return null;
+
+    const {texts} = context;
+    const navLinks = getNavLinks(texts);
 
     return (
         <nav>

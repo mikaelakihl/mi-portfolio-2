@@ -7,12 +7,13 @@ import { LoginPage } from '../pages/LoginPage'
 import { AdminPage } from '../pages/AdminPage'
 import { Header } from '../components/header/header/Header'
 import { Footer } from '../components/footer/Footer'
-import { Navigation } from '../components/header/navigation/Navigation/Navigation'
+import { LanguageProvider } from '../context/LanguageProvider'
 
 function App() {
 
   return (
     <>
+    <LanguageProvider>
       <Header/>
       <main>
         <Routes>
@@ -24,6 +25,7 @@ function App() {
         </Routes>
       </main>
       <Footer/>
+      </LanguageProvider>
     </>
   )
 }
