@@ -1,3 +1,5 @@
+@use "/styles/variables" as variables;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -30,9 +32,10 @@ body {
 }
 
 main{
-  background-color: rgb(133, 115, 90);
+  background-color: #0D330A;
   flex: 1;
   padding-top: 1rem;
+  color: #F9D684;
 }
 
 h1 {

@@ -1,4 +1,7 @@
+@use "../../styles/variables" as variables;
+
 footer {
     height: 150px;
-    background-color: rgb(114, 76, 49);
+    background-color: variables.$color-background;
+    border-top: solid variables.$color-primary 1px;;
 }
