@@ -1,4 +1,62 @@
-.hero_wrapper {
-    height: 70dvh;
-    background-color: rgb(109, 108, 35);
+@use "../../styles/variables" as variables;
+
+
+// .hero_wrapper {
+//     height: 300px;
+// }
+
+.hero {
+    min-height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: 100%;
+    background-image: url("/assets/mi-portfolio-hero-img-a4.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+    
+  
+    .hero_large {
+      height: 100dvh;
+      width: 100vw;
+  
+      @media (max-width: variables.$breakpoint-desktop) {
+        height: 60vh;
+      }
+    }
+  
+    .hero_small {
+      height: 40vh;
+  
+      @media (max-width: variables.$breakpoint-mobile) {
+        height: 30vh;
+      }
+    }
+  
+
+  
+    
+  .logo {
+    position: absolute;
+    width: 300px;
+
+    @media (min-width: variables.$breakpoint-desktop) {
+        width: 500px;
+      }
+    
+    // @media (max-width: 768px) {
+    //   width: 120px;
+    //   top: 1rem;
+    //   left: 1rem;
+    // }
+  }
+    
+    // @media (max-width: 768px) {
+    //   width: 120px;
+    //   top: 1rem;
+    //   left: 1rem;
+    // }
+
+  
