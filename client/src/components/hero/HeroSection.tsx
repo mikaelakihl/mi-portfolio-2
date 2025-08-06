@@ -20,9 +20,6 @@ export const HeroSection = () => {
             { showLogo && (
                 <img src={'/assets/mi-portfolio-logo.png'} alt='Logotyp' className={styles.logo}/>
             )}
-            <div>
-                Hej
-            </div>
         </section>
     )
 }

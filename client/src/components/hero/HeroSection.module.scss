@@ -28,7 +28,8 @@
     }
   
     .hero_small {
-      height: 40vh;
+      height: 30vh;
+      background-position: 70% 30%;
   
       @media (max-width: variables.$breakpoint-mobile) {
         height: 30vh;
